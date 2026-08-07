@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-EduTots-713c7ff8-716f-4e91-a5df-487c599d7d0c</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.7" NoWarn="NU1605"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="10.0.7" NoWarn="NU1605"/>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7"/>
+        <PackageReference Include="Microsoft.Identity.Web" Version="3.14.1"/>
+        <PackageReference Include="Microsoft.Identity.Web.DownstreamApi" Version="3.14.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Auth\" />
+      <Folder Include="Controllers\" />
+    </ItemGroup>
+
+</Project>
