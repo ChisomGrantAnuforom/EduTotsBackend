@@ -25,6 +25,5 @@ public class Message
     public string? Uploaded { get; set; }
 
     public long? MessageUserPegId { get; set; }
-
-    public virtual MessageUserPeg? MessageUserPeg { get; set; }
+    
 }

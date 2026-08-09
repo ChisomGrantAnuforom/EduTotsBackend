@@ -19,8 +19,5 @@ public class SchoolReferralAccount
     public string? DateLastCleared { get; set; }
 
     public string? DateOfLastTransaction { get; set; }
-
-    public virtual EduTotsStaff? EduJuniorStaff { get; set; }
-
-    public virtual ICollection<SchoolReferralAccountHistory> SchoolReferralAccountHistories { get; set; } = new List<SchoolReferralAccountHistory>();
+    
 }

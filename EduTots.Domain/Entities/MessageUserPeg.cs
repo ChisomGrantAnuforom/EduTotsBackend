@@ -9,6 +9,5 @@ public class MessageUserPeg
     public string? UserTwoPhoneNumber { get; set; }
 
     public DateTime? DatePeged { get; set; }
-
-    public virtual ICollection<Message> Messages { get; set; } = new List<Message>();
+    
 }

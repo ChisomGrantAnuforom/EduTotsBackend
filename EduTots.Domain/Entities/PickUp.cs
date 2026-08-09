@@ -13,8 +13,5 @@ public class PickUp
     public int? SchoolId { get; set; }
 
     public string? Uploaded { get; set; }
-
-    public virtual PickUpPersonPupil? PickUpPersonPupil { get; set; }
-
-    public virtual School? School { get; set; }
+    
 }

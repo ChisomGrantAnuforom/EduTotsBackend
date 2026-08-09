@@ -31,18 +31,5 @@ public class Result
     public string? TeacherRemarks { get; set; }
 
     public long? LevelId { get; set; }
-
-    public virtual Exam? Exam { get; set; }
-
-    public virtual Level? Level { get; set; }
-
-    public virtual Pupil? Pupil { get; set; }
-
-    public virtual School? School { get; set; }
-
-    public virtual Session? Session { get; set; }
-
-    public virtual Subject? Subject { get; set; }
-
-    public virtual Term? Term { get; set; }
+    
 }

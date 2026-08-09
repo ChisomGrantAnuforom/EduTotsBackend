@@ -24,9 +24,5 @@ public class HomeWork
 
     public string? Uploaded { get; set; }
 
-    public virtual Teacher? InitiatingTeacher { get; set; }
 
-    public virtual Teacher? PostedByNavigation { get; set; }
-
-    public virtual Pupil? Pupil { get; set; }
 }

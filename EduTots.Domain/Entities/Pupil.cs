@@ -60,22 +60,5 @@ public partial class Pupil
     public string? Enabled { get; set; }
 
     public long? ParentId2 { get; set; }
-
-    public virtual Class? Class { get; set; }
-
-    public virtual ICollection<HomeWork> HomeWorks { get; set; } = new List<HomeWork>();
-
-    public virtual Level? Level { get; set; }
-
-    public virtual Parent? Parent { get; set; }
-
-    public virtual ICollection<PickUpPersonPupil> PickUpPersonPupils { get; set; } = new List<PickUpPersonPupil>();
-
-    public virtual ICollection<Result> Results { get; set; } = new List<Result>();
-
-    public virtual School? School { get; set; }
-
-    public virtual ICollection<SchoolFee> SchoolFees { get; set; } = new List<SchoolFee>();
-
-    public virtual ICollection<SmsTracker> SmsTrackers { get; set; } = new List<SmsTracker>();
+    
 }

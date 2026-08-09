@@ -13,6 +13,5 @@ public class PaymentRequest
     public string? DateOfRequest { get; set; }
 
     public string? DateOfSettlement { get; set; }
-
-    public virtual EduTotsStaff? SomicleStaff { get; set; }
+    
 }

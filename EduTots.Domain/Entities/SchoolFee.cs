@@ -44,11 +44,5 @@ public class SchoolFee
 
     public string? DateFinal { get; set; }
 
-    public virtual Pupil? Pupil { get; set; }
-
-    public virtual School? School { get; set; }
-
-    public virtual Session? Session { get; set; }
-
-    public virtual Term? Term { get; set; }
+    
 }

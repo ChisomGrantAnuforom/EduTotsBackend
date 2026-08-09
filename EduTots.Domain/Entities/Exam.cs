@@ -13,8 +13,5 @@ public class Exam
     public string? OverallScore { get; set; }
 
     public string? Uploaded { get; set; }
-
-    public virtual ICollection<Result> Results { get; set; } = new List<Result>();
-
-    public virtual School? School { get; set; }
+    
 }

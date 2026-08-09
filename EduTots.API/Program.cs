@@ -1,8 +1,13 @@
+using EduTots.Application.Interfaces;
+using EduTots.Application.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Abstractions;
 using Microsoft.Identity.Web.Resource;
+using EduTots.Application.Services;
+using EduTots.Infrastructure.DependencyInjection;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +19,21 @@ builder.Services.AddAuthorization();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+// Application services
+builder.Services.AddScoped<IPupilService, PupilService>(); 
+builder.Services.AddScoped<IAttendanceService, AttendanceService>();
+
+// Infrastructure
+builder.Services.AddInfrastructureServices(builder.Configuration);
+
+builder.Services.AddControllers();
+
+
+
 var app = builder.Build();
+
+app.MapControllers();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

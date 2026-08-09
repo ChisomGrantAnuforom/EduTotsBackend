@@ -28,13 +28,5 @@ public class EduTotsStaff
 
     public string? ReferralPhoneNumber { get; set; }
 
-    public virtual ICollection<EduTotsStaffBank> EduJuniorStaffBanks { get; set; } = new List<EduTotsStaffBank>();
-
-    public virtual ICollection<PaymentRequest> PaymentRequests { get; set; } = new List<PaymentRequest>();
-
-    public virtual ICollection<SchoolReferralAccount> SchoolReferralAccounts { get; set; } = new List<SchoolReferralAccount>();
-
-    public virtual ICollection<SchoolReferral> SchoolReferrals { get; set; } = new List<SchoolReferral>();
-
-    public virtual ICollection<StaffSchoolEngagement> StaffSchoolEngagements { get; set; } = new List<StaffSchoolEngagement>();
+   
 }

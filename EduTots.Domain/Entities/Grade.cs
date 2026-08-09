@@ -16,5 +16,4 @@ public class Grade
 
     public string? Uploaded { get; set; }
 
-    public virtual School? School { get; set; }
 }

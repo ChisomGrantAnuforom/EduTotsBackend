@@ -51,10 +51,5 @@ public partial class Teacher
     public string? Uploaded { get; set; }
 
     public string? Enabled { get; set; }
-
-    public virtual ICollection<HomeWork> HomeWorkInitiatingTeachers { get; set; } = new List<HomeWork>();
-
-    public virtual ICollection<HomeWork> HomeWorkPostedByNavigations { get; set; } = new List<HomeWork>();
-
-    public virtual ICollection<TeacherClass> TeacherClasses { get; set; } = new List<TeacherClass>();
+    
 }

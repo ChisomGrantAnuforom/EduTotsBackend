@@ -11,13 +11,24 @@
         <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.7" NoWarn="NU1605"/>
         <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="10.0.7" NoWarn="NU1605"/>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.10">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Microsoft.Identity.Web" Version="3.14.1"/>
         <PackageReference Include="Microsoft.Identity.Web.DownstreamApi" Version="3.14.1"/>
+
+        <ProjectReference Include="..\EduTots.Application\EduTots.Application.csproj" />
+        <ProjectReference Include="..\EduTots.Infrastructure\EduTots.Infrastructure.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Auth\" />
-      <Folder Include="Controllers\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EduTots.Application\EduTots.Application.csproj" />
+      <ProjectReference Include="..\EduTots.Infrastructure\EduTots.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

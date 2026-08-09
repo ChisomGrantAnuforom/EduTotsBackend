@@ -13,6 +13,5 @@ public class PupilSecurity
     public string? DateTime { get; set; }
 
     public string? AuthType { get; set; }
-
-    public virtual School? School { get; set; }
+    
 }

@@ -11,8 +11,5 @@ public class SchoolReferral
     public string? DateOfReferral { get; set; }
 
     public string? UsedRegKey { get; set; }
-
-    public virtual EduTotsStaff? EduJuniorStaff { get; set; }
-
-    public virtual School? School { get; set; }
+    
 }

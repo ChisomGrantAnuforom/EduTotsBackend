@@ -31,6 +31,5 @@ public class Parent
     public string? Uploaded { get; set; }
 
     public string? Occupation { get; set; }
-
-    public virtual ICollection<Pupil> Pupils { get; set; } = new List<Pupil>();
+    
 }

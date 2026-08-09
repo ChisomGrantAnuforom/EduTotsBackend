@@ -29,8 +29,5 @@ public class PickUpPersonPupil
     public string? DateLastUpdated { get; set; }
 
     public string? Uploaded { get; set; }
-
-    public virtual ICollection<PickUpPersonPupil> PickUpPersonPupils { get; set; } = new List<PickUpPersonPupil>();
-
-    public virtual School? School { get; set; }
+    
 }

@@ -11,10 +11,5 @@ public class Session
     public int? SchoolId { get; set; }
 
     public string? Uploaded { get; set; }
-
-    public virtual ICollection<Result> Results { get; set; } = new List<Result>();
-
-    public virtual School? School { get; set; }
-
-    public virtual ICollection<SchoolFee> SchoolFees { get; set; } = new List<SchoolFee>();
+    
 }

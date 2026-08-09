@@ -19,8 +19,5 @@ public class StaffSchoolEngagement
     public string? DateOfEngagement { get; set; }
 
     public string? SchoolEmailAddress { get; set; }
-
-    public virtual EduTotsStaff? EduJuniorStaff { get; set; }
-
-    public virtual Location? Location { get; set; }
+    
 }

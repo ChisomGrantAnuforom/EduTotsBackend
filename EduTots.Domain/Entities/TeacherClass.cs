@@ -17,10 +17,5 @@ public class TeacherClass
     public string? Uploaded { get; set; }
 
     public int? SchoolId { get; set; }
-
-    public virtual Class? Class { get; set; }
-
-    public virtual School? School { get; set; }
-
-    public virtual Teacher? Teacher { get; set; }
+    
 }

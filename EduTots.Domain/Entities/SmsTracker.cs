@@ -17,8 +17,5 @@ public class SmsTracker
     public DateTime? DateSent { get; set; }
 
     public string? Uploaded { get; set; }
-
-    public virtual Pupil? Pupil { get; set; }
-
-    public virtual School? School { get; set; }
+    
 }

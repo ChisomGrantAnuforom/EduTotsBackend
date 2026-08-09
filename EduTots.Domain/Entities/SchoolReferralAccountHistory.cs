@@ -11,6 +11,5 @@ public class SchoolReferralAccountHistory
     public decimal? AmountCleared { get; set; }
 
     public int? NoOfStudentsCleared { get; set; }
-
-    public virtual SchoolReferralAccount? SchoolReferralAccount { get; set; }
+    
 }
