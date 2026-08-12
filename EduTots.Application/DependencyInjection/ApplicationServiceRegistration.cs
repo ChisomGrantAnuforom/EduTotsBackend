@@ -12,10 +12,10 @@ public static class ApplicationServiceRegistration
         services.AddScoped<IAttendanceService, AttendanceService>();
         services.AddScoped<ISchoolService, SchoolService>();
         services.AddScoped<IParentService, ParentService>();
-        // services.AddScoped<ITeacherService, TeacherService>();
-        // services.AddScoped<IClassService, ClassService>();
-        // services.AddScoped<ITeacherClassService, ITeacherClassService>();
-        // services.AddScoped<IChildSecurityNotificationService, ChildSecurityNotificationService>();
+        services.AddScoped<ITeacherService, TeacherService>();
+        services.AddScoped<IClassService, ClassService>();
+        services.AddScoped<ITeacherClassService, TeacherClassService>();
+        services.AddScoped<IChildSecurityNotificationService, ChildSecurityNotificationService>();
         
 
         return services;

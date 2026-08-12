@@ -5,7 +5,7 @@ namespace EduTots.Application.Interfaces;
 
 public interface ITeacherClassRepository
 {
-    TeacherClass  AddTeacherClassAsync(TeacherClass teacherClass);
+    Task  AddTeacherClassAsync(TeacherClass teacherClass);
     Task<TeacherClass> GetTeacherClassByIdAsync(long teacherClassId);
     Task<List<TeacherClass>> GetAllTeacherClassesAsync();
 }

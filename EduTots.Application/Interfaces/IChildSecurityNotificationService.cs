@@ -3,9 +3,9 @@ using EduTots.Domain.Entities;
 
 namespace EduTots.Application.Interfaces;
 
-public interface IChildSecurityNotificationServicee
+public interface IChildSecurityNotificationService
 {
     Task<ChildSecurityNotification> SendChildSecurityNotificationAsync(SendChildSecurityNotificationDto dto);
-    Task<List<ChildSecurityNotification>> GetChildSecurityNotificationByIdAsync(long childSecurityNotificationId);
+    Task<ChildSecurityNotification> GetChildSecurityNotificationByIdAsync(long childSecurityNotificationId);
     Task<List<ChildSecurityNotification>> GetAllChildSecurityNotificationAsync(); 
 }
