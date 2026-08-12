@@ -12,3 +12,4 @@ public interface IAttendanceService
     Task<Attendance?> GetLatestAttendanceAsync(long pupilId);
 }
 
+

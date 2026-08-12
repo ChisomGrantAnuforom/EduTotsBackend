@@ -1,6 +1,6 @@
-namespace EduTots.Domain.Entities;
+namespace EduTots.Application.DTOs;
 
-public class Parent
+public class RegisterParentDto
 {
     public long ParentId { get; set; }
 
@@ -28,6 +28,7 @@ public class Parent
 
     public string? DateLastUpdated { get; set; }
 
+    public string? Uploaded { get; set; }
+
     public string? Occupation { get; set; }
-    
 }

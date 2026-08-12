@@ -23,6 +23,13 @@ public static class InfrastructureServiceRegistration
         // Repositories
         services.AddScoped<IPupilRepository, PupilRepository>();
         services.AddScoped<IAttendanceRepository, AttendanceRepository>();
+        services.AddScoped<ISchoolRepository, ISchoolRepository>();
+        services.AddScoped<ISchoolRepository, ISchoolRepository>();
+        services.AddScoped<IParentRepository, IParentRepository>();
+        services.AddScoped<ITeacherRepository, ITeacherRepository>();
+        services.AddScoped<IClassRepository, IClassRepository>();
+        services.AddScoped<ITeacherClassRepository, ITeacherClassRepository>();
+        services.AddScoped<IChildSecurityNotificationRepository, IChildSecurityNotificationRepository>();
 
         // Azure Blob / Queue (optional)
         // services.AddSingleton<IBlobStorageService, BlobStorageService>();
