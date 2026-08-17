@@ -1,3 +1,5 @@
+using EduTots.Application.Services;
+
 namespace EduTots.Infrastructure.DependencyInjection;
 
 
@@ -21,15 +23,33 @@ public static class InfrastructureServiceRegistration
             options.UseSqlServer(configuration.GetConnectionString("EduTotsConnection")));
 
         // Repositories
+        services.AddScoped<IPupilService, PupilService>();
         services.AddScoped<IPupilRepository, PupilRepository>();
+        
+        services.AddScoped<IAttendanceService,  AttendanceService>();
         services.AddScoped<IAttendanceRepository, AttendanceRepository>();
-        services.AddScoped<ISchoolRepository, ISchoolRepository>();
-        services.AddScoped<ISchoolRepository, ISchoolRepository>();
-        services.AddScoped<IParentRepository, IParentRepository>();
-        services.AddScoped<ITeacherRepository, ITeacherRepository>();
-        services.AddScoped<IClassRepository, IClassRepository>();
-        services.AddScoped<ITeacherClassRepository, ITeacherClassRepository>();
-        services.AddScoped<IChildSecurityNotificationRepository, IChildSecurityNotificationRepository>();
+        
+        services.AddScoped<ISchoolService, SchoolService>();
+        services.AddScoped<ISchoolRepository, SchoolRepository>();
+        
+        services.AddScoped<IParentService, ParentService>();
+        services.AddScoped<IParentRepository, ParentRepository>();
+        
+        services.AddScoped<ITeacherClassService, TeacherClassService>();
+        services.AddScoped<ITeacherRepository, TeacherRepository>();
+        
+        services.AddScoped<IClassService, ClassService>();
+        services.AddScoped<IClassRepository, ClassRepository>();
+        
+        services.AddScoped<ITeacherClassService, TeacherClassService>();
+        services.AddScoped<ITeacherClassRepository, TeacherClassRepository>();
+        
+        services.AddScoped<IChildSecurityNotificationService, ChildSecurityNotificationService>();
+        services.AddScoped<IChildSecurityNotificationRepository, ChildSecurityNotificationRepository>();
+        
+        
+
+
 
         // Azure Blob / Queue (optional)
         // services.AddSingleton<IBlobStorageService, BlobStorageService>();

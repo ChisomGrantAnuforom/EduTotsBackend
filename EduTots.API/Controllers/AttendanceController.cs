@@ -22,14 +22,14 @@ public class AttendanceController : ControllerBase
         return Ok(attendance);
     }
 
-    [HttpGet("pupil/{pupilId:guid}")]
+    [HttpGet("pupil/{pupilId}")]
     public async Task<IActionResult> GetByPupil(long pupilId)
     {
         var list = await _attendanceService.GetAttendanceByPupilIdAsync(pupilId);
         return Ok(list);
     }
 
-    [HttpGet("pupil/{pupilId:guid}/latest")]
+    [HttpGet("pupil/{pupilId}/latest")]
     public async Task<IActionResult> GetLatest(long pupilId)
     {
         var latest = await _attendanceService.GetLatestAttendanceAsync(pupilId);

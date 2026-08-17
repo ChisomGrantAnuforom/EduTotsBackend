@@ -6,7 +6,7 @@ public class SendChildSecurityNotificationDto
 
     public long ParentId { get; set; }
 
-    public long StudentId { get; set; }
+    public long PupilId { get; set; }
 
     public string Message { get; set; } = null!;
 

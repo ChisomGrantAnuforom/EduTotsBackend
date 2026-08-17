@@ -24,7 +24,7 @@ public class PupilController : ControllerBase
         return Ok(pupil);
     }
 
-    [HttpGet("{id:long}")]
+    [HttpGet("{pupilId}")]
     public async Task<IActionResult> Get(long pupilId)
     {
         var pupil = await _pupilService.GetPupilByIdAsync(pupilId);

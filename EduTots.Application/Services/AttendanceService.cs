@@ -29,6 +29,9 @@ namespace EduTots.Application.Services
             {
                 Id = Guid.NewGuid(),
                 PupilId = dto.PupilId,
+                AttendanceType =  dto.AttendanceType,
+                TimeIn = dto.TimeIn,
+                TimeOut = dto.TimeOut,
                 Status = dto.Status,
                 Date = DateTime.UtcNow
             };

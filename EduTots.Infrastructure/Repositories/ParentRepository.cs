@@ -20,11 +20,11 @@ public class ParentRepository : IParentRepository
         await _context.SaveChangesAsync();
     }
 
-    public async Task<Parent> GetParentByIdAsync(long id)
+    public async Task<Parent> GetParentByIdAsync(long parentId)
     {
         return await _context.Parents
             .AsNoTracking()
-            .FirstOrDefaultAsync(x => x.ParentId == id);
+            .FirstOrDefaultAsync(x => x.ParentId == parentId);
     }
         
         

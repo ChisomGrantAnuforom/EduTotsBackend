@@ -20,7 +20,7 @@ public class ChildSecurityNotificationService : IChildSecurityNotificationServic
         {
             Id = dto.Id,
             ParentId = dto.ParentId,
-            StudentId = dto.StudentId,
+            PupilId = dto.PupilId,
             Message = dto.Message,
             SentAt =  DateTime.Now,
             
